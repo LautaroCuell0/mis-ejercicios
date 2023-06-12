@@ -1,4 +1,4 @@
-let nuemero1 = 12
-let nuemero2 = 10
+let numero1 = 12
+let numero2 = 10
 
-console.log(nuemero1+nuemero2)
+console.log(numero1+numero2)
