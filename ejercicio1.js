@@ -24,7 +24,7 @@
  let nombre = prompt('introduce tu nombre')
  let apellido = prompt ('introduce tu apellido')
 
- console.log('Hola, buenas '+ nombre + " " + apellido)
+ console.log('Hola, buenas '+ nombre  + "  " + apellido)
 
  let numero1 = parseInt(prompt('introduce un numero'))
  let numero2 = parseInt(prompt('introduce un numero'))
