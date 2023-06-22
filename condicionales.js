@@ -28,8 +28,10 @@ let edad = parseInt(prompt('ingrese tu edad'))
 let tutor = prompt('tienes tutor?')
 if (edad>=18){
     console.log(`${edad} tu edad es la indicada para pasar`)
-} else if (edad<18 && tutor.includes('si')){
+} else if (edad<18 && tutor.toLowerCase().includes('si')){
    console.log(`tu edad ${edad} esta debajo de la minima pero entras con tu tutor`)
-}else{
+} else if(edad <= 10){
+   console.log('deberias ir a una guarderia y no estar acá')
+} else{
     console.log(`tu edad ${edad} no es la indicada para pasar, si no cuentas con un tutor no podras pasar`)
 }
