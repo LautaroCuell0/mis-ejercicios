@@ -45,7 +45,7 @@ let lentes = prompt('traes lentes?').toLocaleLowerCase()
 switch (lentes) {
     case 'si': console.log('corre, te van a asesinar los fantasmas!!!!')
         break;
-    case 'no': console.log('compralo YAAA!!!')
+    case 'no': console.log('compralo !!!!')
         break
     default:
         console.log('responde si traes lentes con si o no')
