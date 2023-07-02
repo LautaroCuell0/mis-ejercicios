@@ -40,14 +40,24 @@
 //Una persona esta por comprar inmuebles, si lleva anteojos podra leer en la letra pequeña de se avisa
 //que el inmueble esta construido sobre un cementerio indio embrujado
 
-let lentes = prompt('traes lentes?').toLocaleLowerCase()
+// let lentes = prompt('traes lentes?').toLocaleLowerCase()
 
-switch (lentes) {
-    case 'si': console.log('corre, te van a asesinar los fantasmas!!!!')
-        break;
-    case 'no': console.log('compralo !!!!')
-        break
-    default:
-        console.log('responde si traes lentes con si o no')
-        break;
-}
+// switch (lentes) {
+//     case 'si': console.log('corre, te van a asesinar los fantasmas!!!!')
+//         break;
+//     case 'no': console.log('compralo !!!!')
+//         break
+//     default:
+//         console.log('responde si traes lentes con si o no')
+//         break;
+// }
+
+
+//PORQUE LA LUNA ES MAYOR QUE EL SOL//
+
+let pregunta = prompt('PORQUE LA LUNA ES MAYOR QUE EL SOL???').toLocaleLowerCase();
+
+ while (pregunta !== 'porque la dejan salir de noche') {
+    pregunta = prompt('segui intentando')
+ }
+
