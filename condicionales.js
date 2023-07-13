@@ -82,20 +82,20 @@
 // //    console.log(`${ingresaNumero} X ${i} = ${ingresaNumero * i}`)
 // // }
 
-// let continuar = true
-// let suma = 0
+//  let continuar = true
+//  let suma = 0
 
-// while(continuar == true){
-//       let numero =prompt('numero')
-//    if(numero == null) {
-//       let otroNumero = confirm('desea agregar mas numeros?')   
-//    if(otroNumero == true){
-//       otroNumero = prompt('introduce un numero')
-//    }else{
-//       otroNumero = false
-//       continuar = false
-//       alert('gracias por colaborar') 
-//    }
-// } 
-// }
-// console.log(suma)
+//  while(continuar == true){
+//        let numero = parseFloat(prompt('numero'))
+//     if(numero == null) {
+//        let otroNumero = confirm('desea agregar mas numeros?')   
+//     if(otroNumero == true){
+//        otroNumero = parseFloat(prompt('introduce un numero'))
+//     }else{
+//        otroNumero = false
+//        continuar = false
+//        alert('gracias por colaborar') 
+//     }
+//  } 
+//  }
+//  console.log(suma)

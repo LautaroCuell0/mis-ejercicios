@@ -27,29 +27,7 @@
 // // for(let i = 0; i<=10; i++){
 // //    console.log(`${ingresaNumero} X ${i} = ${ingresaNumero * i}`)
 // // } 
- let continuar = true
- let suma = 0
 
- while(continuar == true){
-       let numero =parseInt(dprompt('numero'))
-    if(numero == null) {
-       continuar =false
-       alert('gracias por colaborar')
-       console.log(suma+numero)
-       
-//       let otroNumero = confirm('desea agregar mas numeros?')   
-//     if(otroNumero == true){
-//        otroNumero = numero
-//        otroNumero = parseInt(prompt('introduce un numero'))
-//     }else{
-//        otroNumero = false
-//        continuar = false
-//        alert('gracias por colaborar') 
-//        console.log(suma+numero)
-//     }
- } 
- }
- 
 
 
 

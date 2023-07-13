@@ -66,15 +66,30 @@
 // }
 
 
-// let texto = prompt('escribe algo').toLocaleLowerCase();
+ let texto = prompt('escribe algo').toLocaleLowerCase();
+ let arrayVocal = texto.split('')
+// console.log(arrayVocal)
+let a = 'a'
+let e = 'e'
+let i = 'i'
+let o = 'o'
+let u = 'u'
 
-// for(let i=0; i<=texto.length;i++){
-//     let letras = texto.charAt(i)
-//     if(letras === 'a' || 'e' || 'i' || 'o' ||'u'){
-//         console.log(texto)
-//     }
-// }
+const vocales = ()=> {
 
+    if(arrayVocal.includes(a)){
+        console.log(`tengo la vocal a`)
+    } else if(arrayVocal.includes(e)){
+        console.log(`tengo la vocal e`)
+    } else if(arrayVocal.includes(i)){
+        console.log(`tengo la vocal i`)
+    } else if(arrayVocal.includes(o)){
+        console.log(`tengo la vocal o`)
+    } else if(arrayVocal.includes(u)){
+        console.log(`tengo la vocal u`)
+    }
+ }
+ vocales()
 
 // 10.- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 
 // (sólo hay que comprobar si lo es por uno de los cuatro)
