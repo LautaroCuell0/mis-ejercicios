@@ -1,0 +1,79 @@
+.body{
+    background-color: black;
+}
+/* .light{
+    background-color: yellow;
+    height: 300px;
+    color: black;
+    border: solid, black 2px;
+}
+
+.dark{
+    background-color: orange;
+    height: 300px;
+    color: white;
+    border:  solid, red 2px;
+}
+
+.cuadrado{
+    height: 100px;
+    width: 120px;
+    background-color: black;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    color: wheat;
+} */
+     .star{
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+        flex-wrap: wrap;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .cover-star{
+        display: flex;
+        justify-content: center;
+    }
+    .aleatorio{
+        background-color: #A51C30;
+        color: white;
+        border-radius: 40px;
+        height: 50px;
+        width: 200px;
+        border-color: #A51C30;
+    }
+
+    .padre-user{
+        background-color: black;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cover-user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px   ;
+    }
+    .info-user{
+        border-radius: 40px;
+        height: 40px;
+        width: 250px;
+    }
+
+    .send{
+        border-radius: 40px;
+        width: 100px;
+        height: 30px;
+    }
+
+    #resultado{
+        display: flex;
+        justify-content: center;
+        color: red;
+    } 
