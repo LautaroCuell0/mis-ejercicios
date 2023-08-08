@@ -145,4 +145,3 @@ const vocales = ()=> {
 // }
 
 
-alert('hola que tal')
