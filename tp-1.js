@@ -143,3 +143,6 @@ const vocales = ()=> {
 // } else {
 //     console.log('introduciste un caracter que no es un numero o no es divisible por 2,3,5 o 7') 
 // }
+
+
+alert('hola')
