@@ -7,13 +7,13 @@
 
 // filtrar un producto por una o varias letras (ingresar el termino a filtrar con un prompt)
 
-let carritos = [];
-let producto = prompt('ingresa un producto');
+// let carritos = [];
+// let producto = prompt('ingresa un producto');
 
-    while (producto !== null) {
-        carritos.push(producto)
-        alert('se agrego producto')
-        producto = prompt('agregar producto')
-    } 
+//     while (producto !== null) {
+//         carritos.push(producto)
+//         alert('se agrego producto')
+//         producto = prompt('agregar producto')
+//     } 
 
-    console.log(carritos)
+//     console.log(carritos)
