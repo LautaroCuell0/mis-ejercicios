@@ -9,6 +9,9 @@ class Product {
 }
 
 let products = [
+
+    //instanciamos el producto
+
     new Product ('samsung', 60000, 'ee12sam323', 'telefono samsung tactil 4gb', 
     'https://cdn-iibml.nitrocdn.com/mIsZFyqRlkiNfZRugfIBKtdyexDtafZx/assets/images/optimized/rev-99e5996/image/cache/catalog/products_2023/samsung-s23-ultra-green-7-800x800.png'),
 
@@ -20,8 +23,10 @@ let products = [
     
 ]
  
+//foreach es un metodo que recorre arreglos
 products.forEach(
     product => {
+        //creamos el elemento
         const newProductCard = document.createElement('div')
         newProductCard.id = product.productId // a newProductCard le asigna un id el cual viene de productId
         //le agregamos la informacion//
@@ -33,7 +38,7 @@ products.forEach(
           <h5 class="card-title">${product.nombre}</h5>
           <p class="card-text">${product.descrip}</p>
           <spam class="btn btn-danger"><strong>$${product.precio}</strong></spam>
-          <button class="btn btn-primary my-4" onclick='agregarCarrito(productId)'>agregar al carrito</button>
+          <button class="btn btn-primary my-4" onclick='agregarCarrito(${product.productId})'>agregar al carrito</button>
           <button class="btn btn-primary">🤍</button>
         </div>
         `
@@ -46,12 +51,40 @@ products.forEach(
 )
 
 let carrito = []
+
 function agregarCarrito(productId){
-       let product = products.find( product => product.productId === product.id);
+       let product = products.find(product => product.productId == productId.id);
+
        carrito.push(product)
-       console.log(product)
+       
 
        //crear el elemento que vamos a mostrar en el modal//
+
+       const CardAddCarrito = document.createElement('div')
+       CardAddCarrito.id = product.productId
+
+       //agregarmos la informacion
+
+       CardAddCarrito.classList.add('card', 'mx-2');
+       CardAddCarrito.style.width = '18rem'
+       CardAddCarrito.innerHTML =`
+       <img src=${product.imagen} class='card card-img-top' alt=${product.nombre}>
+       <div class="card-body">
+          <h5 class="card-title">${product.nombre}</h5>
+          <p class="card-text">${product.descrip}</p>
+          <spam class="btn btn-danger"><strong>$${product.precio}</strong></spam>
+          <button class='btn btn-danger' onclick=eliminar()>X</button>
+          <br>
+
+        </div>
+       `
+       //buscar al padre
+       const padreContainerCardAdd = document.querySelector('#cart-body')
+       //adopta el hijo
+       padreContainerCardAdd.appendChild(CardAddCarrito)
+       
+
+
 
        //despues deberiamos agregarle la informacion pj. estilo, clase o darle info al HTML//
 
